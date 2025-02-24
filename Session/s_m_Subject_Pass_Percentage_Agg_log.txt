@@ -1,0 +1,94 @@
+2022-03-07 23:41:34 : INFO : (3908 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6014 : Initializing session [s_m_Subject_Pass_Percentage_Agg] at [Mon Mar 07 23:41:34 2022].
+2022-03-07 23:41:34 : INFO : (3908 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6683 : Repository Name: [Repo_Academy]
+2022-03-07 23:41:34 : INFO : (3908 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6684 : Server Name: [INT_RepoAcademy]
+2022-03-07 23:41:34 : INFO : (3908 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6686 : Folder: [Project]
+2022-03-07 23:41:34 : INFO : (3908 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6685 : Workflow: [wf_m_Subject_Pass_Percentage_Agg] Run Instance Name: [] Run Id: [93]
+2022-03-07 23:41:34 : INFO : (3908 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6101 : Mapping name: m_Subject_Pass_Percentage_Agg [version CheckedOut].
+2022-03-07 23:41:34 : INFO : (3908 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6964 : Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+2022-03-07 23:41:34 : INFO : (3908 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6708 : Using configuration property [EnableDataEncryption,no]
+2022-03-07 23:41:34 : INFO : (3908 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6708 : Using configuration property [StoreHAPersistenceInDB,no]
+2022-03-07 23:41:34 : INFO : (3908 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6703 : Session [s_m_Subject_Pass_Percentage_Agg] is run by 64-bit Integration Service  [node01], version [10.1.0], build [0609].
+2022-03-07 23:41:34 : INFO : (3908 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24091 : Thread [MANAGER] has the ID [1].
+2022-03-07 23:41:34 : INFO : (3908 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24058 : Running Partition Group [1].
+2022-03-07 23:41:34 : INFO : (3908 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24000 : Parallel Pipeline Engine initializing.
+2022-03-07 23:41:34 : INFO : (3908 | MONITOR) : (IS | INT_RepoAcademy) : node01 : PETL_24091 : Thread [MONITOR] has the ID [2].
+2022-03-07 23:41:34 : INFO : (3908 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24001 : Parallel Pipeline Engine running.
+2022-03-07 23:41:34 : INFO : (3908 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24003 : Initializing session run.
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : PETL_24091 : Thread [MAPPING] has the ID [3].
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : CMN_1569 : Server Mode: [ASCII]
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : CMN_1570 : Server Code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TM_6151 : The session sort order is [Binary].
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TM_6156 : Using low precision processing.
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TM_6180 : Deadlock retry logic will not be implemented.
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TM_6187 : Session target-based commit interval is [10000].
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TM_6307 : DTM error log disabled. 
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TE_7022 : TShmWriter: Initialized
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : DBG_21694 : JNR_Subject_Pass_Percentage_Agg Partition [0]: Index cache size = [59652323], Data cache size = [119304646]
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TT_11098 : The Joiner transformation [JNR_Subject_Pass_Percentage_Agg] is configured with the join algorithm: Nested-Loop.
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : DBG_21694 : AGG_Subject_Pass_Percentage_Agg1 Partition [0]: Index cache size = [59652323], Data cache size = [119304646]
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TE_7212 : Increasing [Index Cache] size for transformation [AGG_Subject_Pass_Percentage_Agg1] from [59652323] to [59653848].
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TE_7212 : Increasing [Data Cache] size for transformation [AGG_Subject_Pass_Percentage_Agg1] from [119304646] to [119304900].
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TE_7029 : Aggregate Information: Creating New Index and Data Files
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TE_7034 : Aggregate Information: Index file is [C:\Informatica\10.1.0\server\infa_shared\Cache\PMAGG41_5_0_93.idx]
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TE_7035 : Aggregate Information: Data file is [C:\Informatica\10.1.0\server\infa_shared\Cache\PMAGG41_5_0_93.dat]
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : DBG_21694 : AGG_Subject_Pass_Percentage_Agg2 Partition [0]: Index cache size = [59652323], Data cache size = [119304646]
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TE_7212 : Increasing [Index Cache] size for transformation [AGG_Subject_Pass_Percentage_Agg2] from [59652323] to [59653848].
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TE_7212 : Increasing [Data Cache] size for transformation [AGG_Subject_Pass_Percentage_Agg2] from [119304646] to [119304776].
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TE_7029 : Aggregate Information: Creating New Index and Data Files
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TE_7034 : Aggregate Information: Index file is [C:\Informatica\10.1.0\server\infa_shared\Cache\PMAGG41_9_0_93.idx]
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TE_7035 : Aggregate Information: Data file is [C:\Informatica\10.1.0\server\infa_shared\Cache\PMAGG41_9_0_93.dat]
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TM_6007 : DTM initialized successfully for session [s_m_Subject_Pass_Percentage_Agg]
+2022-03-07 23:41:34 : INFO : (3908 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : PETL_24033 : All DTM Connection Info: [<NONE>].
+2022-03-07 23:41:34 : INFO : (3908 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24004 : PETL_24004 Starting pre-session tasks. : (Mon Mar 07 23:41:34 2022)
+2022-03-07 23:41:34 : INFO : (3908 | PRE-SESS) : (IS | INT_RepoAcademy) : node01 : PETL_24091 : Thread [PRE-SESS] has the ID [4].
+2022-03-07 23:41:34 : INFO : (3908 | PRE-SESS) : (IS | INT_RepoAcademy) : node01 : DBG_21349 : No load constraints for Target [SUBJECT_PASS_PERCENTAGE_AGG]. It does not reference any primary table from the same active source or transaction generator.
+2022-03-07 23:41:34 : INFO : (3908 | PRE-SESS) : (IS | INT_RepoAcademy) : node01 : DBG_21104 : Determining truncate order for [SUBJECT_PASS_PERCENTAGE_AGG] [instance id:11]
+2022-03-07 23:41:34 : INFO : (3908 | PRE-SESS) : (IS | INT_RepoAcademy) : node01 : DBG_21531 :     Truncate order for [SUBJECT_PASS_PERCENTAGE_AGG] [instance id:11] determined successfully
+2022-03-07 23:41:34 : INFO : (3908 | PRE-SESS) : (IS | INT_RepoAcademy) : node01 : WRT_8365 : WRT_8365 Starting truncate for target table [SUBJECT_PASS_PERCENTAGE_AGG]. : (Mon Mar 07 23:41:34 2022)
+2022-03-07 23:41:34 : INFO : (3908 | PRE-SESS) : (IS | INT_RepoAcademy) : node01 : WRT_8022 : WRT_8022 Truncate table for table [SUBJECT_PASS_PERCENTAGE_AGG] succeeded. : (Mon Mar 07 23:41:34 2022)
+2022-03-07 23:41:34 : INFO : (3908 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24027 : PETL_24027 Pre-session task completed successfully. : (Mon Mar 07 23:41:34 2022)
+2022-03-07 23:41:34 : INFO : (3908 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : PETL_24006 : Starting data movement.
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TM_6660 : Total Buffer Pool size is 1829472 bytes and Block size is 65536 bytes.
+2022-03-07 23:41:34 : INFO : (3908 | READER_1_1_1) : (IS | INT_RepoAcademy) : node01 : PETL_24091 : Thread [READER_1_1_1] has the ID [5].
+2022-03-07 23:41:34 : INFO : (3908 | READER_1_1_1) : (IS | INT_RepoAcademy) : node01 : DBG_21437 : Reader: Source is a file-based source.
+2022-03-07 23:41:34 : INFO : (3908 | READER_1_1_1) : (IS | INT_RepoAcademy) : node01 : FR_3118 : source [SQ_Dept_details] code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+2022-03-07 23:41:34 : INFO : (3908 | READER_1_1_1) : (IS | INT_RepoAcademy) : node01 : FR_3071 : Maximum Line sequential buffer length is 1026.
+2022-03-07 23:41:34 : ERROR : (3908 | READER_1_1_1) : (IS | INT_RepoAcademy) : node01 : FR_3000 : Error opening file [C:\Users\Administrator\Documents\Student Report INTCDB22DW002\Sources\Dept_details.txt].  Operating system error message [The system cannot find the path specified.].
+2022-03-07 23:41:34 : ERROR : (3908 | READER_1_1_1) : (IS | INT_RepoAcademy) : node01 : BLKR_16002 : ERROR: Initialization failed.
+2022-03-07 23:41:34 : INFO : (3908 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24031 : 
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [SQ_Dept_details] has completed. The total run time was insufficient for any meaningful statistics.
+
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : CMN_1791 : The index cache size that would hold [0] aggregate groups of input rows for [AGG_Subject_Pass_Percentage_Agg1], in memory, is [0] bytes
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : CMN_1790 : The data cache size that would hold [0] aggregate groups of input rows for [AGG_Subject_Pass_Percentage_Agg1], in memory, is [0] bytes
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : CMN_1791 : The index cache size that would hold [0] aggregate groups of input rows for [AGG_Subject_Pass_Percentage_Agg2], in memory, is [0] bytes
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : CMN_1790 : The data cache size that would hold [0] aggregate groups of input rows for [AGG_Subject_Pass_Percentage_Agg2], in memory, is [0] bytes
+2022-03-07 23:41:34 : INFO : (3908 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24005 : PETL_24005 Starting post-session tasks. : (Mon Mar 07 23:41:34 2022)
+2022-03-07 23:41:34 : INFO : (3908 | POST-SESS) : (IS | INT_RepoAcademy) : node01 : PETL_24091 : Thread [POST-SESS] has the ID [6].
+2022-03-07 23:41:34 : INFO : (3908 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24029 : PETL_24029 Post-session task completed successfully. : (Mon Mar 07 23:41:34 2022)
+2022-03-07 23:41:34 : INFO : (3908 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TM_6018 : The session completed with [0] row transformation errors. 
+2022-03-07 23:41:35 : INFO : (3908 | MANAGER) : (IS | INT_RepoAcademy) : node01 : TE_7216 : Deleting cache files [C:\Informatica\10.1.0\server\infa_shared\Cache\PMAGG41_5_0_93.idx] for transformation [AGG_Subject_Pass_Percentage_Agg1].
+2022-03-07 23:41:35 : INFO : (3908 | MANAGER) : (IS | INT_RepoAcademy) : node01 : TE_7216 : Deleting cache files [C:\Informatica\10.1.0\server\infa_shared\Cache\PMAGG41_5_0_93.dat] for transformation [AGG_Subject_Pass_Percentage_Agg1].
+2022-03-07 23:41:35 : INFO : (3908 | MANAGER) : (IS | INT_RepoAcademy) : node01 : TE_7216 : Deleting cache files [C:\Informatica\10.1.0\server\infa_shared\Cache\PMAGG41_9_0_93.idx] for transformation [AGG_Subject_Pass_Percentage_Agg2].
+2022-03-07 23:41:35 : INFO : (3908 | MANAGER) : (IS | INT_RepoAcademy) : node01 : TE_7216 : Deleting cache files [C:\Informatica\10.1.0\server\infa_shared\Cache\PMAGG41_9_0_93.dat] for transformation [AGG_Subject_Pass_Percentage_Agg2].
+2022-03-07 23:41:35 : INFO : (3908 | MANAGER) : (IS | INT_RepoAcademy) : node01 : TE_7216 : Deleting cache files [C:\Informatica\10.1.0\server\infa_shared\Cache\PMJNR41_10_0_93.dat] for transformation [JNR_Subject_Pass_Percentage_Agg].
+2022-03-07 23:41:35 : INFO : (3908 | MANAGER) : (IS | INT_RepoAcademy) : node01 : TE_7216 : Deleting cache files [C:\Informatica\10.1.0\server\infa_shared\Cache\PMJNR41_10_0_93.idx] for transformation [JNR_Subject_Pass_Percentage_Agg].
+2022-03-07 23:41:35 : INFO : (3908 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24002 : Parallel Pipeline Engine finished.
+2022-03-07 23:41:35 : INFO : (3908 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : PETL_24013 : Session run completed with failure.
+2022-03-07 23:41:35 : INFO : (3908 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6022 : 
+
+SESSION LOAD SUMMARY
+================================================
+
+2022-03-07 23:41:35 : INFO : (3908 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6252 : Source Load Summary.
+2022-03-07 23:41:35 : INFO : (3908 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : CMN_1740 : Table: [SQ_Dept_details] (Instance Name: [SQ_Dept_details])
+	 Output Rows [0], Affected Rows [0], Applied Rows [0], Rejected Rows [0]
+2022-03-07 23:41:35 : INFO : (3908 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : CMN_1740 : Table: [SQ_student_marks] (Instance Name: [SQ_student_marks])
+	 Output Rows [0], Affected Rows [0], Applied Rows [0], Rejected Rows [0]
+2022-03-07 23:41:35 : INFO : (3908 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6253 : Target Load Summary.
+2022-03-07 23:41:35 : INFO : (3908 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : CMN_1740 : Table: [SUBJECT_PASS_PERCENTAGE_AGG] (Instance Name: [SUBJECT_PASS_PERCENTAGE_AGG])
+	 Output Rows [0], Affected Rows [0], Applied Rows [0], Rejected Rows [0]
+2022-03-07 23:41:35 : INFO : (3908 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6023 : 
+===================================================
+
+2022-03-07 23:41:35 : INFO : (3908 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6020 : Session [s_m_Subject_Pass_Percentage_Agg] completed at [Mon Mar 07 23:41:35 2022].

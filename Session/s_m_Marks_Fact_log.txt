@@ -1,0 +1,200 @@
+2022-03-07 23:41:21 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6014 : Initializing session [s_m_Marks_Fact] at [Mon Mar 07 23:41:21 2022].
+2022-03-07 23:41:21 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6683 : Repository Name: [Repo_Academy]
+2022-03-07 23:41:21 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6684 : Server Name: [INT_RepoAcademy]
+2022-03-07 23:41:21 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6686 : Folder: [Project]
+2022-03-07 23:41:21 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6685 : Workflow: [wf_m_Marks_Fact] Run Instance Name: [] Run Id: [91]
+2022-03-07 23:41:21 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6101 : Mapping name: m_Marks_Fact [version CheckedOut].
+2022-03-07 23:41:21 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6964 : Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+2022-03-07 23:41:21 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6708 : Using configuration property [EnableDataEncryption,no]
+2022-03-07 23:41:21 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6708 : Using configuration property [StoreHAPersistenceInDB,no]
+2022-03-07 23:41:21 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6703 : Session [s_m_Marks_Fact] is run by 64-bit Integration Service  [node01], version [10.1.0], build [0609].
+2022-03-07 23:41:21 : INFO : (3612 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24091 : Thread [MANAGER] has the ID [1].
+2022-03-07 23:41:21 : INFO : (3612 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24058 : Running Partition Group [1].
+2022-03-07 23:41:21 : INFO : (3612 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24000 : Parallel Pipeline Engine initializing.
+2022-03-07 23:41:21 : INFO : (3612 | MONITOR) : (IS | INT_RepoAcademy) : node01 : PETL_24091 : Thread [MONITOR] has the ID [2].
+2022-03-07 23:41:21 : INFO : (3612 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24001 : Parallel Pipeline Engine running.
+2022-03-07 23:41:21 : INFO : (3612 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24003 : Initializing session run.
+2022-03-07 23:41:21 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : PETL_24091 : Thread [MAPPING] has the ID [3].
+2022-03-07 23:41:21 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : CMN_1569 : Server Mode: [ASCII]
+2022-03-07 23:41:21 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : CMN_1570 : Server Code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+2022-03-07 23:41:21 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TM_6151 : The session sort order is [Binary].
+2022-03-07 23:41:21 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TM_6156 : Using low precision processing.
+2022-03-07 23:41:21 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TM_6180 : Deadlock retry logic will not be implemented.
+2022-03-07 23:41:21 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TM_6187 : Session target-based commit interval is [10000].
+2022-03-07 23:41:21 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TM_6307 : DTM error log disabled. 
+2022-03-07 23:41:21 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TE_7022 : TShmWriter: Initialized
+2022-03-07 23:41:21 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : DBG_21694 : JNR_Marks_Fact1 Partition [0]: Index cache size = [59652323], Data cache size = [119304646]
+2022-03-07 23:41:21 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TT_11098 : The Joiner transformation [JNR_Marks_Fact1] is configured with the join algorithm: Nested-Loop.
+2022-03-07 23:41:21 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : DBG_21694 : JNR_Marks_Fact2 Partition [0]: Index cache size = [59652323], Data cache size = [119304646]
+2022-03-07 23:41:21 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TT_11098 : The Joiner transformation [JNR_Marks_Fact2] is configured with the join algorithm: Nested-Loop.
+2022-03-07 23:41:21 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : DBG_21694 : AGG_Marks_Fact Partition [0]: Index cache size = [59652323], Data cache size = [119304646]
+2022-03-07 23:41:21 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TE_7212 : Increasing [Index Cache] size for transformation [AGG_Marks_Fact] from [59652323] to [59653848].
+2022-03-07 23:41:21 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TE_7212 : Increasing [Data Cache] size for transformation [AGG_Marks_Fact] from [119304646] to [119304768].
+2022-03-07 23:41:21 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TE_7029 : Aggregate Information: Creating New Index and Data Files
+2022-03-07 23:41:21 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TE_7034 : Aggregate Information: Index file is [C:\Informatica\10.1.0\server\infa_shared\Cache\PMAGG44_39_0_91.idx]
+2022-03-07 23:41:21 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TE_7035 : Aggregate Information: Data file is [C:\Informatica\10.1.0\server\infa_shared\Cache\PMAGG44_39_0_91.dat]
+2022-03-07 23:41:21 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TM_6007 : DTM initialized successfully for session [s_m_Marks_Fact]
+2022-03-07 23:41:21 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : PETL_24033 : All DTM Connection Info: [<NONE>].
+2022-03-07 23:41:21 : INFO : (3612 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24004 : PETL_24004 Starting pre-session tasks. : (Mon Mar 07 23:41:21 2022)
+2022-03-07 23:41:21 : INFO : (3612 | PRE-SESS) : (IS | INT_RepoAcademy) : node01 : PETL_24091 : Thread [PRE-SESS] has the ID [4].
+2022-03-07 23:41:21 : INFO : (3612 | PRE-SESS) : (IS | INT_RepoAcademy) : node01 : DBG_21349 : No load constraints for Target [MARKS_FACT]. It does not reference any primary table from the same active source or transaction generator.
+2022-03-07 23:41:21 : INFO : (3612 | PRE-SESS) : (IS | INT_RepoAcademy) : node01 : DBG_21104 : Determining truncate order for [MARKS_FACT] [instance id:43]
+2022-03-07 23:41:21 : INFO : (3612 | PRE-SESS) : (IS | INT_RepoAcademy) : node01 : DBG_21531 :     Truncate order for [MARKS_FACT] [instance id:43] determined successfully
+2022-03-07 23:41:21 : INFO : (3612 | PRE-SESS) : (IS | INT_RepoAcademy) : node01 : WRT_8365 : WRT_8365 Starting truncate for target table [MARKS_FACT]. : (Mon Mar 07 23:41:21 2022)
+2022-03-07 23:41:21 : INFO : (3612 | PRE-SESS) : (IS | INT_RepoAcademy) : node01 : WRT_8022 : WRT_8022 Truncate table for table [MARKS_FACT] succeeded. : (Mon Mar 07 23:41:21 2022)
+2022-03-07 23:41:21 : INFO : (3612 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24027 : PETL_24027 Pre-session task completed successfully. : (Mon Mar 07 23:41:21 2022)
+2022-03-07 23:41:21 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : PETL_24006 : Starting data movement.
+2022-03-07 23:41:21 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TM_6660 : Total Buffer Pool size is 2439296 bytes and Block size is 65536 bytes.
+2022-03-07 23:41:21 : INFO : (3612 | READER_1_1_1) : (IS | INT_RepoAcademy) : node01 : PETL_24091 : Thread [READER_1_1_1] has the ID [5].
+2022-03-07 23:41:21 : INFO : (3612 | READER_1_1_1) : (IS | INT_RepoAcademy) : node01 : DBG_21437 : Reader: Source is a file-based source.
+2022-03-07 23:41:21 : INFO : (3612 | READER_1_1_1) : (IS | INT_RepoAcademy) : node01 : FR_3118 : source [SQ_student_marks] code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+2022-03-07 23:41:21 : INFO : (3612 | READER_1_1_1) : (IS | INT_RepoAcademy) : node01 : FR_3071 : Maximum Line sequential buffer length is 1026.
+2022-03-07 23:41:21 : INFO : (3612 | READER_1_1_1) : (IS | INT_RepoAcademy) : node01 : BLKR_16003 : Initialization completed successfully.
+2022-03-07 23:41:21 : INFO : (3612 | TRANSF_1_1_1) : (IS | INT_RepoAcademy) : node01 : PETL_24091 : Thread [TRANSF_1_1_1] has the ID [6].
+2022-03-07 23:41:21 : INFO : (3612 | READER_1_2_1) : (IS | INT_RepoAcademy) : node01 : PETL_24091 : Thread [READER_1_2_1] has the ID [7].
+2022-03-07 23:41:21 : INFO : (3612 | READER_1_2_1) : (IS | INT_RepoAcademy) : node01 : DBG_21437 : Reader: Source is a file-based source.
+2022-03-07 23:41:21 : INFO : (3612 | READER_1_2_1) : (IS | INT_RepoAcademy) : node01 : FR_3118 : source [SQ_Dept_details] code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+2022-03-07 23:41:21 : INFO : (3612 | READER_1_2_1) : (IS | INT_RepoAcademy) : node01 : FR_3071 : Maximum Line sequential buffer length is 1026.
+2022-03-07 23:41:21 : INFO : (3612 | READER_1_2_1) : (IS | INT_RepoAcademy) : node01 : BLKR_16003 : Initialization completed successfully.
+2022-03-07 23:41:21 : INFO : (3612 | TRANSF_1_2_1) : (IS | INT_RepoAcademy) : node01 : PETL_24091 : Thread [TRANSF_1_2_1] has the ID [8].
+2022-03-07 23:41:21 : INFO : (3612 | READER_1_3_1) : (IS | INT_RepoAcademy) : node01 : PETL_24091 : Thread [READER_1_3_1] has the ID [9].
+2022-03-07 23:41:21 : INFO : (3612 | READER_1_3_1) : (IS | INT_RepoAcademy) : node01 : DBG_21437 : Reader: Source is a file-based source.
+2022-03-07 23:41:21 : INFO : (3612 | READER_1_3_1) : (IS | INT_RepoAcademy) : node01 : FR_3118 : source [SQ_student_details] code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+2022-03-07 23:41:21 : INFO : (3612 | READER_1_3_1) : (IS | INT_RepoAcademy) : node01 : FR_3071 : Maximum Line sequential buffer length is 1026.
+2022-03-07 23:41:21 : INFO : (3612 | READER_1_3_1) : (IS | INT_RepoAcademy) : node01 : BLKR_16003 : Initialization completed successfully.
+2022-03-07 23:41:21 : INFO : (3612 | TRANSF_1_3_1) : (IS | INT_RepoAcademy) : node01 : PETL_24091 : Thread [TRANSF_1_3_1] has the ID [10].
+2022-03-07 23:41:21 : INFO : (3612 | TRANSF_1_4_1) : (IS | INT_RepoAcademy) : node01 : PETL_24091 : Thread [TRANSF_1_4_1] has the ID [11].
+2022-03-07 23:41:21 : INFO : (3612 | WRITER_1_*_1) : (IS | INT_RepoAcademy) : node01 : PETL_24091 : Thread [WRITER_1_*_1] has the ID [12].
+2022-03-07 23:41:21 : INFO : (3612 | WRITER_1_*_1) : (IS | INT_RepoAcademy) : node01 : WRT_8147 : Writer: Target is database [orcl1], user [infoadmin], bulk mode [OFF]
+2022-03-07 23:41:22 : INFO : (3612 | WRITER_1_*_1) : (IS | INT_RepoAcademy) : node01 : WRT_8124 : Target Table MARKS_FACT :SQL INSERT statement:
+INSERT INTO MARKS_FACT(STUDENT_ID,STUDENT_NAME,DEPT_ID,DEPT_NAME,SUBJECT1,SUBJECT2,SUBJECT3,SUBJECT4,SUBJECT5,TOTAL,AVERAGE,RESULT)  VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2022-03-07 23:41:22 : INFO : (3612 | WRITER_1_*_1) : (IS | INT_RepoAcademy) : node01 : WRT_8270 : Target connection group #1 consists of target(s) [MARKS_FACT]
+2022-03-07 23:41:22 : INFO : (3612 | WRITER_1_*_1) : (IS | INT_RepoAcademy) : node01 : WRT_8003 : Writer initialization complete.
+2022-03-07 23:41:22 : INFO : (3612 | READER_1_1_1) : (IS | INT_RepoAcademy) : node01 : BLKR_16007 : Reader run started.
+2022-03-07 23:41:22 : INFO : (3612 | READER_1_2_1) : (IS | INT_RepoAcademy) : node01 : BLKR_16007 : Reader run started.
+2022-03-07 23:41:22 : INFO : (3612 | WRITER_1_*_1) : (IS | INT_RepoAcademy) : node01 : WRT_8005 : Writer run started.
+2022-03-07 23:41:22 : INFO : (3612 | READER_1_3_1) : (IS | INT_RepoAcademy) : node01 : BLKR_16007 : Reader run started.
+2022-03-07 23:41:22 : INFO : (3612 | WRITER_1_*_1) : (IS | INT_RepoAcademy) : node01 : WRT_8158 : 
+
+*****START LOAD SESSION*****
+
+Load Start Time: Mon Mar 07 23:41:22 2022
+
+Target tables:
+
+     MARKS_FACT
+
+
+2022-03-07 23:41:22 : INFO : (3612 | READER_1_2_1) : (IS | INT_RepoAcademy) : node01 : FR_3076 : Skipped over [1] lines.
+2022-03-07 23:41:22 : INFO : (3612 | READER_1_2_1) : (IS | INT_RepoAcademy) : node01 : DBG_21430 : DBG_21430 Reading data from input source file [C:\Users\Administrator\Documents\Project - Informatica\Dept_details.txt] : (Mon Mar 07 23:41:22 2022)
+2022-03-07 23:41:22 : INFO : (3612 | READER_1_2_1) : (IS | INT_RepoAcademy) : node01 : BLKR_16019 : Read [23] rows, read [0] error rows for source table [Dept_details] instance name [Dept_details]
+2022-03-07 23:41:22 : INFO : (3612 | READER_1_1_1) : (IS | INT_RepoAcademy) : node01 : FR_3076 : Skipped over [1] lines.
+2022-03-07 23:41:22 : INFO : (3612 | READER_1_2_1) : (IS | INT_RepoAcademy) : node01 : BLKR_16008 : Reader run completed.
+2022-03-07 23:41:22 : INFO : (3612 | READER_1_1_1) : (IS | INT_RepoAcademy) : node01 : DBG_21430 : DBG_21430 Reading data from input source file [C:\Users\Administrator\Documents\Project - Informatica\student_marks.txt] : (Mon Mar 07 23:41:22 2022)
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_2_1) : (IS | INT_RepoAcademy) : node01 : DBG_21077 : DBG_21077 Create joiner cache on master relation : (Mon Mar 07 23:41:22 2022)
+2022-03-07 23:41:22 : INFO : (3612 | READER_1_3_1) : (IS | INT_RepoAcademy) : node01 : FR_3076 : Skipped over [1] lines.
+2022-03-07 23:41:22 : INFO : (3612 | READER_1_1_1) : (IS | INT_RepoAcademy) : node01 : BLKR_16019 : Read [40] rows, read [0] error rows for source table [student_marks] instance name [student_marks]
+2022-03-07 23:41:22 : INFO : (3612 | READER_1_3_1) : (IS | INT_RepoAcademy) : node01 : DBG_21430 : DBG_21430 Reading data from input source file [C:\Users\Administrator\Documents\Project - Informatica\student_details.txt] : (Mon Mar 07 23:41:22 2022)
+2022-03-07 23:41:22 : INFO : (3612 | READER_1_1_1) : (IS | INT_RepoAcademy) : node01 : BLKR_16008 : Reader run completed.
+2022-03-07 23:41:22 : INFO : (3612 | READER_1_3_1) : (IS | INT_RepoAcademy) : node01 : BLKR_16019 : Read [40] rows, read [0] error rows for source table [student_details] instance name [student_details]
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_1_1) : (IS | INT_RepoAcademy) : node01 : DBG_21216 : Finished transformations for Source Qualifier [SQ_student_marks]. Total errors [0] 
+2022-03-07 23:41:22 : INFO : (3612 | READER_1_3_1) : (IS | INT_RepoAcademy) : node01 : BLKR_16008 : Reader run completed.
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_2_1) : (IS | INT_RepoAcademy) : node01 : TE_7212 : Increasing [Index Cache] size for transformation [JNR_Marks_Fact1] from [59652323] to [59652800].
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_2_1) : (IS | INT_RepoAcademy) : node01 : TE_7212 : Increasing [Data Cache] size for transformation [JNR_Marks_Fact1] from [119304646] to [119304992].
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_2_1) : (IS | INT_RepoAcademy) : node01 : CMN_1690 : Created new data file [C:\Informatica\10.1.0\server\infa_shared\Cache\PMJNR44_40_0_91.dat] and index file [C:\Informatica\10.1.0\server\infa_shared\Cache\PMJNR44_40_0_91.idx] for Joiner [JNR_Marks_Fact1].
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_2_1) : (IS | INT_RepoAcademy) : node01 : DBG_21214 : DBG_21214 Finished joiner cache on master relation : (Mon Mar 07 23:41:22 2022)
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_2_1) : (IS | INT_RepoAcademy) : node01 : DBG_21216 : Finished transformations for Source Qualifier [SQ_Dept_details]. Total errors [0] 
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_3_1) : (IS | INT_RepoAcademy) : node01 : DBG_21603 : DBG_21603 Open master relation cache for detail joiner : (Mon Mar 07 23:41:22 2022)
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_3_1) : (IS | INT_RepoAcademy) : node01 : DBG_21077 : DBG_21077 Create joiner cache on master relation : (Mon Mar 07 23:41:22 2022)
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_3_1) : (IS | INT_RepoAcademy) : node01 : TE_7212 : Increasing [Index Cache] size for transformation [JNR_Marks_Fact2] from [59652323] to [59652800].
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_3_1) : (IS | INT_RepoAcademy) : node01 : TE_7212 : Increasing [Data Cache] size for transformation [JNR_Marks_Fact2] from [119304646] to [119304768].
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_3_1) : (IS | INT_RepoAcademy) : node01 : CMN_1690 : Created new data file [C:\Informatica\10.1.0\server\infa_shared\Cache\PMJNR44_41_0_91.dat] and index file [C:\Informatica\10.1.0\server\infa_shared\Cache\PMJNR44_41_0_91.idx] for Joiner [JNR_Marks_Fact2].
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_3_1) : (IS | INT_RepoAcademy) : node01 : DBG_21214 : DBG_21214 Finished joiner cache on master relation : (Mon Mar 07 23:41:22 2022)
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_3_1) : (IS | INT_RepoAcademy) : node01 : DBG_21215 : DBG_21215 Finished processing detail relation : (Mon Mar 07 23:41:22 2022)
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_3_1) : (IS | INT_RepoAcademy) : node01 : CMN_1795 : The index cache size that would hold [23] input rows from the master for [JNR_Marks_Fact1], in memory, is [1600] bytes
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_4_1) : (IS | INT_RepoAcademy) : node01 : DBG_21603 : DBG_21603 Open master relation cache for detail joiner : (Mon Mar 07 23:41:22 2022)
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_3_1) : (IS | INT_RepoAcademy) : node01 : CMN_1794 : The data cache size that would hold [23] input rows from the master for [JNR_Marks_Fact1], in memory, is [2272] bytes
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_4_1) : (IS | INT_RepoAcademy) : node01 : DBG_21215 : DBG_21215 Finished processing detail relation : (Mon Mar 07 23:41:22 2022)
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_4_1) : (IS | INT_RepoAcademy) : node01 : CMN_1795 : The index cache size that would hold [40] input rows from the master for [JNR_Marks_Fact2], in memory, is [1600] bytes
+2022-03-07 23:41:22 : INFO : (3612 | WRITER_1_*_1) : (IS | INT_RepoAcademy) : node01 : WRT_8167 : Start loading table [MARKS_FACT] at: Mon Mar 07 23:41:22 2022
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_4_1) : (IS | INT_RepoAcademy) : node01 : CMN_1794 : The data cache size that would hold [40] input rows from the master for [JNR_Marks_Fact2], in memory, is [4224] bytes
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_3_1) : (IS | INT_RepoAcademy) : node01 : DBG_21216 : Finished transformations for Source Qualifier [SQ_student_details]. Total errors [0] 
+2022-03-07 23:41:22 : INFO : (3612 | WRITER_1_*_1) : (IS | INT_RepoAcademy) : node01 : WRT_8168 : End loading table [MARKS_FACT] at: Mon Mar 07 23:41:22 2022
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_4_1) : (IS | INT_RepoAcademy) : node01 : TE_7032 : The B-Tree being managed in files
+C:\Informatica\10.1.0\server\infa_shared\Cache\PMAGG44_39_0_91.dat for Data and
+
+C:\Informatica\10.1.0\server\infa_shared\Cache\PMAGG44_39_0_91.idx for Index has:
+	Index Size:	7
+	Row Size:	40
+	Order:		100
+	Minimum Order:	50
+	Height:		1
+	Entries:	40
+	IndexPageSize:	1896
+	IndexPages:	31463
+	DataPageSize:	528
+	DataPages:	225956
+
+2022-03-07 23:41:22 : INFO : (3612 | TRANSF_1_4_1) : (IS | INT_RepoAcademy) : node01 : DBG_21216 : Finished transformations for Source Qualifier [AGG_Marks_Fact]. Total errors [0] 
+2022-03-07 23:41:22 : INFO : (3612 | WRITER_1_*_1) : (IS | INT_RepoAcademy) : node01 : WRT_8141 : 
+Commit on end-of-data  Mon Mar 07 23:41:22 2022
+===================================================
+
+WRT_8036 Target: MARKS_FACT (Instance Name: [MARKS_FACT])
+WRT_8038 Inserted rows - Requested: 40         Applied: 40         Rejected: 0          Affected: 40        
+
+2022-03-07 23:41:22 : INFO : (3612 | WRITER_1_*_1) : (IS | INT_RepoAcademy) : node01 : WRT_8035 : Load complete time: Mon Mar 07 23:41:22 2022
+
+LOAD SUMMARY
+============
+
+WRT_8036 Target: MARKS_FACT (Instance Name: [MARKS_FACT])
+WRT_8038 Inserted rows - Requested: 40         Applied: 40         Rejected: 0          Affected: 40        
+
+
+2022-03-07 23:41:22 : INFO : (3612 | WRITER_1_*_1) : (IS | INT_RepoAcademy) : node01 : WRT_8043 : *****END LOAD SESSION*****
+2022-03-07 23:41:22 : INFO : (3612 | WRITER_1_*_1) : (IS | INT_RepoAcademy) : node01 : WRT_8006 : Writer run completed.
+2022-03-07 23:41:22 : INFO : (3612 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24031 : 
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [SQ_student_marks] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [SQ_student_marks] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [READER_1_2_1] created for [the read stage] of partition point [SQ_Dept_details] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [TRANSF_1_2_1] created for [the transformation stage] of partition point [SQ_Dept_details] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [READER_1_3_1] created for [the read stage] of partition point [SQ_student_details] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [TRANSF_1_3_1] created for [the transformation stage] of partition point [SQ_student_details] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [TRANSF_1_4_1] created for [the transformation stage] of partition point [AGG_Marks_Fact] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [MARKS_FACT] has completed. The total run time was insufficient for any meaningful statistics.
+
+2022-03-07 23:41:22 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : CMN_1791 : The index cache size that would hold [40] aggregate groups of input rows for [AGG_Marks_Fact], in memory, is [1896] bytes
+2022-03-07 23:41:22 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : CMN_1790 : The data cache size that would hold [40] aggregate groups of input rows for [AGG_Marks_Fact], in memory, is [2112] bytes
+2022-03-07 23:41:22 : INFO : (3612 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24005 : PETL_24005 Starting post-session tasks. : (Mon Mar 07 23:41:22 2022)
+2022-03-07 23:41:22 : INFO : (3612 | POST-SESS) : (IS | INT_RepoAcademy) : node01 : PETL_24091 : Thread [POST-SESS] has the ID [13].
+2022-03-07 23:41:22 : INFO : (3612 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24029 : PETL_24029 Post-session task completed successfully. : (Mon Mar 07 23:41:22 2022)
+2022-03-07 23:41:22 : INFO : (3612 | MAPPING) : (IS | INT_RepoAcademy) : node01 : TM_6018 : The session completed with [0] row transformation errors. 
+2022-03-07 23:41:22 : INFO : (3612 | MANAGER) : (IS | INT_RepoAcademy) : node01 : TE_7216 : Deleting cache files [C:\Informatica\10.1.0\server\infa_shared\Cache\PMAGG44_39_0_91.idx] for transformation [AGG_Marks_Fact].
+2022-03-07 23:41:22 : INFO : (3612 | MANAGER) : (IS | INT_RepoAcademy) : node01 : TE_7216 : Deleting cache files [C:\Informatica\10.1.0\server\infa_shared\Cache\PMAGG44_39_0_91.dat] for transformation [AGG_Marks_Fact].
+2022-03-07 23:41:22 : INFO : (3612 | MANAGER) : (IS | INT_RepoAcademy) : node01 : TE_7216 : Deleting cache files [C:\Informatica\10.1.0\server\infa_shared\Cache\PMJNR44_40_0_91.dat] for transformation [JNR_Marks_Fact1].
+2022-03-07 23:41:22 : INFO : (3612 | MANAGER) : (IS | INT_RepoAcademy) : node01 : TE_7216 : Deleting cache files [C:\Informatica\10.1.0\server\infa_shared\Cache\PMJNR44_40_0_91.idx] for transformation [JNR_Marks_Fact1].
+2022-03-07 23:41:22 : INFO : (3612 | MANAGER) : (IS | INT_RepoAcademy) : node01 : TE_7216 : Deleting cache files [C:\Informatica\10.1.0\server\infa_shared\Cache\PMJNR44_41_0_91.dat] for transformation [JNR_Marks_Fact2].
+2022-03-07 23:41:22 : INFO : (3612 | MANAGER) : (IS | INT_RepoAcademy) : node01 : TE_7216 : Deleting cache files [C:\Informatica\10.1.0\server\infa_shared\Cache\PMJNR44_41_0_91.idx] for transformation [JNR_Marks_Fact2].
+2022-03-07 23:41:22 : INFO : (3612 | MANAGER) : (IS | INT_RepoAcademy) : node01 : PETL_24002 : Parallel Pipeline Engine finished.
+2022-03-07 23:41:22 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : PETL_24012 : Session run completed successfully.
+2022-03-07 23:41:22 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6022 : 
+
+SESSION LOAD SUMMARY
+================================================
+
+2022-03-07 23:41:22 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6252 : Source Load Summary.
+2022-03-07 23:41:22 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : CMN_1740 : Table: [SQ_student_marks] (Instance Name: [SQ_student_marks])
+	 Output Rows [40], Affected Rows [40], Applied Rows [40], Rejected Rows [0]
+2022-03-07 23:41:22 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : CMN_1740 : Table: [SQ_Dept_details] (Instance Name: [SQ_Dept_details])
+	 Output Rows [23], Affected Rows [23], Applied Rows [23], Rejected Rows [0]
+2022-03-07 23:41:22 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : CMN_1740 : Table: [SQ_student_details] (Instance Name: [SQ_student_details])
+	 Output Rows [40], Affected Rows [40], Applied Rows [40], Rejected Rows [0]
+2022-03-07 23:41:22 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6253 : Target Load Summary.
+2022-03-07 23:41:22 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : CMN_1740 : Table: [MARKS_FACT] (Instance Name: [MARKS_FACT])
+	 Output Rows [40], Affected Rows [40], Applied Rows [40], Rejected Rows [0]
+2022-03-07 23:41:22 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6023 : 
+===================================================
+
+2022-03-07 23:41:22 : INFO : (3612 | DIRECTOR) : (IS | INT_RepoAcademy) : node01 : TM_6020 : Session [s_m_Marks_Fact] completed at [Mon Mar 07 23:41:22 2022].

@@ -1,0 +1,24 @@
+Dept Code	Dept Name
+D1	B.E. Aeronautical Engineering
+D2	B.E. Civil Engineering
+D3	B.E. Computer Science and Engineering
+D4	B.E. Electrical and Electronics Engineering
+D5	B.E. Electronics and Communication Engineering
+D6	B.E. Electronics and Instrumentation Engineering
+D7	B.E. Mechanical Engineering
+D8	B.E. Mechatronics Engineering
+D9	B.Tech. Bio Technology
+D10	B.Tech. Fashion Technology
+D11	B.Tech. Information Technology
+D12	B.Tech. Textile Technology
+D13	M.E. Applied Electronics
+D14	M.E. CAD/CAM Engineering
+D15	M.E. Communication Systems
+D16	M.E. Computer Science and Engineering
+D17	M.E. Energy Engineering
+D18	M.E. Industrial Engineering
+D19	M.E. Power Electronics and Drives
+D20	M.E. Structural Engineering
+D21	M.Tech. Apparel Technology & Management
+D22	M.Tech. Bio-Technology
+D23	M.Tech. Textile Technology

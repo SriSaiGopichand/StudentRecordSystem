@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!DOCTYPE POWERMART SYSTEM "powrmart.dtd">
+<POWERMART CREATION_DATE="03/07/2022 23:39:57" REPOSITORY_VERSION="186.95">
+<REPOSITORY NAME="Repo_Academy" VERSION="186" CODEPAGE="MS1252" DATABASETYPE="Oracle">
+<FOLDER NAME="Project" GROUP="" OWNER="infouser" SHARED="NOTSHARED" DESCRIPTION="" PERMISSIONS="rwx---r--" UUID="ca7d619f-2931-49cd-883a-20e7f17ea72e">
+    <SOURCE BUSINESSNAME ="" DATABASETYPE ="Flat File" DBDNAME ="FlatFile" DESCRIPTION ="" NAME ="student_adress" OBJECTVERSION ="1" OWNERNAME ="" VERSIONNUMBER ="1">
+        <FLATFILE CODEPAGE ="MS1252" CONSECDELIMITERSASONE ="NO" DELIMITED ="YES" DELIMITERS ="&#x5c;011" ESCAPE_CHARACTER ="" KEEPESCAPECHAR ="NO" LINESEQUENTIAL ="NO" MULTIDELIMITERSASAND ="NO" NULLCHARTYPE ="ASCII" NULL_CHARACTER ="*" PADBYTES ="1" QUOTE_CHARACTER ="NONE" REPEATABLE ="NO" ROWDELIMITER ="0" SHIFTSENSITIVEDATA ="NO" SKIPROWS ="1" STRIPTRAILINGBLANKS ="NO"/>
+        <TABLEATTRIBUTE NAME ="Base Table Name" VALUE =""/>
+        <TABLEATTRIBUTE NAME ="Search Specification" VALUE =""/>
+        <TABLEATTRIBUTE NAME ="Sort Specification" VALUE =""/>
+        <TABLEATTRIBUTE NAME ="Datetime Format" VALUE ="A  19 mm/dd/yyyy hh24:mi:ss"/>
+        <TABLEATTRIBUTE NAME ="Thousand Separator" VALUE ="None"/>
+        <TABLEATTRIBUTE NAME ="Decimal Separator" VALUE ="."/>
+        <TABLEATTRIBUTE NAME ="Add Currently Processed Flat File Name Port" VALUE ="NO"/>
+        <TABLEATTRIBUTE NAME ="Source TimeStamp" VALUE =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="string" DESCRIPTION ="" FIELDNUMBER ="1" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="10" LEVEL ="0" NAME ="Address" NULLABLE ="NULL" OCCURS ="0" OFFSET ="0" PHYSICALLENGTH ="10" PHYSICALOFFSET ="0" PICTURETEXT ="" PRECISION ="10" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="string" DESCRIPTION ="" FIELDNUMBER ="2" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="8" LEVEL ="0" NAME ="Postal_code" NULLABLE ="NULL" OCCURS ="0" OFFSET ="10" PHYSICALLENGTH ="8" PHYSICALOFFSET ="10" PICTURETEXT ="" PRECISION ="8" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="number" DESCRIPTION ="" FIELDNUMBER ="3" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="10" LEVEL ="0" NAME ="Phone_Number" NULLABLE ="NULL" OCCURS ="0" OFFSET ="18" PHYSICALLENGTH ="10" PHYSICALOFFSET ="18" PICTURETEXT ="" PRECISION ="10" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="number" DESCRIPTION ="" FIELDNUMBER ="4" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="12" LEVEL ="0" NAME ="Student_ID" NULLABLE ="NULL" OCCURS ="0" OFFSET ="28" PHYSICALLENGTH ="12" PHYSICALOFFSET ="28" PICTURETEXT ="" PRECISION ="12" SCALE ="0" USAGE_FLAGS =""/>
+    </SOURCE>
+    <SOURCE BUSINESSNAME ="" DATABASETYPE ="Flat File" DBDNAME ="FlatFile" DESCRIPTION ="" NAME ="student_details" OBJECTVERSION ="1" OWNERNAME ="" VERSIONNUMBER ="1">
+        <FLATFILE CODEPAGE ="MS1252" CONSECDELIMITERSASONE ="NO" DELIMITED ="YES" DELIMITERS ="&#x5c;011" ESCAPE_CHARACTER ="" KEEPESCAPECHAR ="NO" LINESEQUENTIAL ="NO" MULTIDELIMITERSASAND ="NO" NULLCHARTYPE ="ASCII" NULL_CHARACTER ="*" PADBYTES ="1" QUOTE_CHARACTER ="NONE" REPEATABLE ="NO" ROWDELIMITER ="0" SHIFTSENSITIVEDATA ="NO" SKIPROWS ="1" STRIPTRAILINGBLANKS ="NO"/>
+        <TABLEATTRIBUTE NAME ="Base Table Name" VALUE =""/>
+        <TABLEATTRIBUTE NAME ="Search Specification" VALUE =""/>
+        <TABLEATTRIBUTE NAME ="Sort Specification" VALUE =""/>
+        <TABLEATTRIBUTE NAME ="Datetime Format" VALUE ="A  19 mm/dd/yyyy hh24:mi:ss"/>
+        <TABLEATTRIBUTE NAME ="Thousand Separator" VALUE ="None"/>
+        <TABLEATTRIBUTE NAME ="Decimal Separator" VALUE ="."/>
+        <TABLEATTRIBUTE NAME ="Add Currently Processed Flat File Name Port" VALUE ="NO"/>
+        <TABLEATTRIBUTE NAME ="Source TimeStamp" VALUE =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="number" DESCRIPTION ="" FIELDNUMBER ="1" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="2" LEVEL ="0" NAME ="Student_ID" NULLABLE ="NULL" OCCURS ="0" OFFSET ="0" PHYSICALLENGTH ="2" PHYSICALOFFSET ="0" PICTURETEXT ="" PRECISION ="2" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="string" DESCRIPTION ="" FIELDNUMBER ="2" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="8" LEVEL ="0" NAME ="Student_Name" NULLABLE ="NULL" OCCURS ="0" OFFSET ="2" PHYSICALLENGTH ="8" PHYSICALOFFSET ="2" PICTURETEXT ="" PRECISION ="8" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="string" DESCRIPTION ="" FIELDNUMBER ="3" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="3" LEVEL ="0" NAME ="Dept_ID" NULLABLE ="NULL" OCCURS ="0" OFFSET ="10" PHYSICALLENGTH ="3" PHYSICALOFFSET ="10" PICTURETEXT ="" PRECISION ="3" SCALE ="0" USAGE_FLAGS =""/>
+    </SOURCE>
+    <TARGET BUSINESSNAME ="" CONSTRAINT ="" DATABASETYPE ="Oracle" DESCRIPTION ="" NAME ="STUDENT_DIMENSION" OBJECTVERSION ="1" TABLEOPTIONS ="" VERSIONNUMBER ="1">
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="number(p,s)" DESCRIPTION ="" FIELDNUMBER ="1" KEYTYPE ="NOT A KEY" NAME ="STUDENT_ID" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="38" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="nvarchar2" DESCRIPTION ="" FIELDNUMBER ="2" KEYTYPE ="NOT A KEY" NAME ="STUDENT_NAME" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="100" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="nvarchar2" DESCRIPTION ="" FIELDNUMBER ="3" KEYTYPE ="NOT A KEY" NAME ="DEPT_ID" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="100" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="nvarchar2" DESCRIPTION ="" FIELDNUMBER ="4" KEYTYPE ="NOT A KEY" NAME ="ADDRESS" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="100" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="number" DESCRIPTION ="" FIELDNUMBER ="5" KEYTYPE ="NOT A KEY" NAME ="POSTAL_CODE" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="15" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="number" DESCRIPTION ="" FIELDNUMBER ="6" KEYTYPE ="NOT A KEY" NAME ="PHONE_NUMBER" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="15" SCALE ="0"/>
+    </TARGET>
+    <MAPPING DESCRIPTION ="" ISVALID ="YES" NAME ="m_Student_Dimension" OBJECTVERSION ="1" VERSIONNUMBER ="1">
+        <TRANSFORMATION DESCRIPTION ="" NAME ="SQ_student_details" OBJECTVERSION ="1" REUSABLE ="NO" TYPE ="Source Qualifier" VERSIONNUMBER ="1">
+            <TRANSFORMFIELD DATATYPE ="decimal" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="Student_ID" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="2" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="Student_Name" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="8" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="Dept_ID" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="3" SCALE ="0"/>
+            <TABLEATTRIBUTE NAME ="Sql Query" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="User Defined Join" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Source Filter" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Number Of Sorted Ports" VALUE ="0"/>
+            <TABLEATTRIBUTE NAME ="Tracing Level" VALUE ="Normal"/>
+            <TABLEATTRIBUTE NAME ="Select Distinct" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Is Partitionable" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Pre SQL" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Post SQL" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Output is deterministic" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Output is repeatable" VALUE ="Never"/>
+        </TRANSFORMATION>
+        <TRANSFORMATION DESCRIPTION ="" NAME ="SQ_student_adress" OBJECTVERSION ="1" REUSABLE ="NO" TYPE ="Source Qualifier" VERSIONNUMBER ="1">
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="Address" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="Postal_code" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="8" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="decimal" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="Phone_Number" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="decimal" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="Student_ID" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="12" SCALE ="0"/>
+            <TABLEATTRIBUTE NAME ="Sql Query" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="User Defined Join" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Source Filter" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Number Of Sorted Ports" VALUE ="0"/>
+            <TABLEATTRIBUTE NAME ="Tracing Level" VALUE ="Normal"/>
+            <TABLEATTRIBUTE NAME ="Select Distinct" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Is Partitionable" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Pre SQL" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Post SQL" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Output is deterministic" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Output is repeatable" VALUE ="Never"/>
+        </TRANSFORMATION>
+        <TRANSFORMATION DESCRIPTION ="" NAME ="EXP_Student_Dimension" OBJECTVERSION ="1" REUSABLE ="NO" TYPE ="Expression" VERSIONNUMBER ="1">
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" EXPRESSION ="Address" EXPRESSIONTYPE ="GENERAL" NAME ="Address" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="ERROR(&apos;transformation error&apos;)" DESCRIPTION ="" EXPRESSION ="UPPER(Address)" EXPRESSIONTYPE ="GENERAL" NAME ="o_Address" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" EXPRESSION ="Postal_code" EXPRESSIONTYPE ="GENERAL" NAME ="Postal_code" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="8" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="ERROR(&apos;transformation error&apos;)" DESCRIPTION ="" EXPRESSION ="REG_REPLACE(Postal_code,&apos;[^A-Za-z0-9].&apos; ,&apos;&apos;)" EXPRESSIONTYPE ="GENERAL" NAME ="o_Postal_code" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="decimal" DEFAULTVALUE ="" DESCRIPTION ="" EXPRESSION ="Phone_Number" EXPRESSIONTYPE ="GENERAL" NAME ="Phone_Number" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="ERROR(&apos;transformation error&apos;)" DESCRIPTION ="" EXPRESSION ="IIF(LENGTH(Phone_Number)=10,Phone_Number,NULL)" EXPRESSIONTYPE ="GENERAL" NAME ="o_Phone_Number" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="decimal" DEFAULTVALUE ="" DESCRIPTION ="" EXPRESSION ="Student_ID" EXPRESSIONTYPE ="GENERAL" NAME ="Student_ID" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="12" SCALE ="0"/>
+            <TABLEATTRIBUTE NAME ="Tracing Level" VALUE ="Normal"/>
+        </TRANSFORMATION>
+        <TRANSFORMATION DESCRIPTION ="" NAME ="JNR_Student_Dimension" OBJECTVERSION ="1" REUSABLE ="NO" TYPE ="Joiner" VERSIONNUMBER ="1">
+            <TRANSFORMFIELD DATATYPE ="decimal" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="Student_ID" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT/MASTER" PRECISION ="2" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="Student_Name" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT/MASTER" PRECISION ="8" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="Dept_ID" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT/MASTER" PRECISION ="3" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="o_Address" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="o_Postal_code" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="o_Phone_Number" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="decimal" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="Student_ID1" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="12" SCALE ="0"/>
+            <TABLEATTRIBUTE NAME ="Case Sensitive String Comparison" VALUE ="YES"/>
+            <TABLEATTRIBUTE NAME ="Cache Directory" VALUE ="$PMCacheDir"/>
+            <TABLEATTRIBUTE NAME ="Join Condition" VALUE ="Student_ID = Student_ID1"/>
+            <TABLEATTRIBUTE NAME ="Join Type" VALUE ="Normal Join"/>
+            <TABLEATTRIBUTE NAME ="Null ordering in master" VALUE ="Null Is Highest Value"/>
+            <TABLEATTRIBUTE NAME ="Null ordering in detail" VALUE ="Null Is Highest Value"/>
+            <TABLEATTRIBUTE NAME ="Tracing Level" VALUE ="Normal"/>
+            <TABLEATTRIBUTE NAME ="Joiner Data Cache Size" VALUE ="Auto"/>
+            <TABLEATTRIBUTE NAME ="Joiner Index Cache Size" VALUE ="Auto"/>
+            <TABLEATTRIBUTE NAME ="Sorted Input" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Master Sort Order" VALUE ="Auto"/>
+            <TABLEATTRIBUTE NAME ="Transformation Scope" VALUE ="All Input"/>
+        </TRANSFORMATION>
+        <INSTANCE DESCRIPTION ="" NAME ="STUDENT_DIMENSION" TRANSFORMATION_NAME ="STUDENT_DIMENSION" TRANSFORMATION_TYPE ="Target Definition" TYPE ="TARGET"/>
+        <INSTANCE DBDNAME ="FlatFile" DESCRIPTION ="" NAME ="student_details" TRANSFORMATION_NAME ="student_details" TRANSFORMATION_TYPE ="Source Definition" TYPE ="SOURCE"/>
+        <INSTANCE DBDNAME ="FlatFile" DESCRIPTION ="" NAME ="student_adress" TRANSFORMATION_NAME ="student_adress" TRANSFORMATION_TYPE ="Source Definition" TYPE ="SOURCE"/>
+        <INSTANCE DESCRIPTION ="" NAME ="SQ_student_details" REUSABLE ="NO" TRANSFORMATION_NAME ="SQ_student_details" TRANSFORMATION_TYPE ="Source Qualifier" TYPE ="TRANSFORMATION">
+            <ASSOCIATED_SOURCE_INSTANCE NAME ="student_details"/>
+        </INSTANCE>
+        <INSTANCE DESCRIPTION ="" NAME ="SQ_student_adress" REUSABLE ="NO" TRANSFORMATION_NAME ="SQ_student_adress" TRANSFORMATION_TYPE ="Source Qualifier" TYPE ="TRANSFORMATION">
+            <ASSOCIATED_SOURCE_INSTANCE NAME ="student_adress"/>
+        </INSTANCE>
+        <INSTANCE DESCRIPTION ="" NAME ="EXP_Student_Dimension" REUSABLE ="NO" TRANSFORMATION_NAME ="EXP_Student_Dimension" TRANSFORMATION_TYPE ="Expression" TYPE ="TRANSFORMATION"/>
+        <INSTANCE DESCRIPTION ="" NAME ="JNR_Student_Dimension" REUSABLE ="NO" TRANSFORMATION_NAME ="JNR_Student_Dimension" TRANSFORMATION_TYPE ="Joiner" TYPE ="TRANSFORMATION"/>
+        <CONNECTOR FROMFIELD ="Student_ID" FROMINSTANCE ="JNR_Student_Dimension" FROMINSTANCETYPE ="Joiner" TOFIELD ="STUDENT_ID" TOINSTANCE ="STUDENT_DIMENSION" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="Student_Name" FROMINSTANCE ="JNR_Student_Dimension" FROMINSTANCETYPE ="Joiner" TOFIELD ="STUDENT_NAME" TOINSTANCE ="STUDENT_DIMENSION" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="Dept_ID" FROMINSTANCE ="JNR_Student_Dimension" FROMINSTANCETYPE ="Joiner" TOFIELD ="DEPT_ID" TOINSTANCE ="STUDENT_DIMENSION" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="o_Address" FROMINSTANCE ="JNR_Student_Dimension" FROMINSTANCETYPE ="Joiner" TOFIELD ="ADDRESS" TOINSTANCE ="STUDENT_DIMENSION" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="o_Postal_code" FROMINSTANCE ="JNR_Student_Dimension" FROMINSTANCETYPE ="Joiner" TOFIELD ="POSTAL_CODE" TOINSTANCE ="STUDENT_DIMENSION" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="o_Phone_Number" FROMINSTANCE ="JNR_Student_Dimension" FROMINSTANCETYPE ="Joiner" TOFIELD ="PHONE_NUMBER" TOINSTANCE ="STUDENT_DIMENSION" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="Student_ID" FROMINSTANCE ="student_details" FROMINSTANCETYPE ="Source Definition" TOFIELD ="Student_ID" TOINSTANCE ="SQ_student_details" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="Student_Name" FROMINSTANCE ="student_details" FROMINSTANCETYPE ="Source Definition" TOFIELD ="Student_Name" TOINSTANCE ="SQ_student_details" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="Dept_ID" FROMINSTANCE ="student_details" FROMINSTANCETYPE ="Source Definition" TOFIELD ="Dept_ID" TOINSTANCE ="SQ_student_details" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="Address" FROMINSTANCE ="student_adress" FROMINSTANCETYPE ="Source Definition" TOFIELD ="Address" TOINSTANCE ="SQ_student_adress" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="Postal_code" FROMINSTANCE ="student_adress" FROMINSTANCETYPE ="Source Definition" TOFIELD ="Postal_code" TOINSTANCE ="SQ_student_adress" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="Phone_Number" FROMINSTANCE ="student_adress" FROMINSTANCETYPE ="Source Definition" TOFIELD ="Phone_Number" TOINSTANCE ="SQ_student_adress" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="Student_ID" FROMINSTANCE ="student_adress" FROMINSTANCETYPE ="Source Definition" TOFIELD ="Student_ID" TOINSTANCE ="SQ_student_adress" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="Student_ID" FROMINSTANCE ="SQ_student_details" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="Student_ID" TOINSTANCE ="JNR_Student_Dimension" TOINSTANCETYPE ="Joiner"/>
+        <CONNECTOR FROMFIELD ="Student_Name" FROMINSTANCE ="SQ_student_details" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="Student_Name" TOINSTANCE ="JNR_Student_Dimension" TOINSTANCETYPE ="Joiner"/>
+        <CONNECTOR FROMFIELD ="Dept_ID" FROMINSTANCE ="SQ_student_details" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="Dept_ID" TOINSTANCE ="JNR_Student_Dimension" TOINSTANCETYPE ="Joiner"/>
+        <CONNECTOR FROMFIELD ="Address" FROMINSTANCE ="SQ_student_adress" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="Address" TOINSTANCE ="EXP_Student_Dimension" TOINSTANCETYPE ="Expression"/>
+        <CONNECTOR FROMFIELD ="Postal_code" FROMINSTANCE ="SQ_student_adress" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="Postal_code" TOINSTANCE ="EXP_Student_Dimension" TOINSTANCETYPE ="Expression"/>
+        <CONNECTOR FROMFIELD ="Phone_Number" FROMINSTANCE ="SQ_student_adress" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="Phone_Number" TOINSTANCE ="EXP_Student_Dimension" TOINSTANCETYPE ="Expression"/>
+        <CONNECTOR FROMFIELD ="Student_ID" FROMINSTANCE ="SQ_student_adress" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="Student_ID" TOINSTANCE ="EXP_Student_Dimension" TOINSTANCETYPE ="Expression"/>
+        <CONNECTOR FROMFIELD ="o_Address" FROMINSTANCE ="EXP_Student_Dimension" FROMINSTANCETYPE ="Expression" TOFIELD ="o_Address" TOINSTANCE ="JNR_Student_Dimension" TOINSTANCETYPE ="Joiner"/>
+        <CONNECTOR FROMFIELD ="o_Postal_code" FROMINSTANCE ="EXP_Student_Dimension" FROMINSTANCETYPE ="Expression" TOFIELD ="o_Postal_code" TOINSTANCE ="JNR_Student_Dimension" TOINSTANCETYPE ="Joiner"/>
+        <CONNECTOR FROMFIELD ="o_Phone_Number" FROMINSTANCE ="EXP_Student_Dimension" FROMINSTANCETYPE ="Expression" TOFIELD ="o_Phone_Number" TOINSTANCE ="JNR_Student_Dimension" TOINSTANCETYPE ="Joiner"/>
+        <CONNECTOR FROMFIELD ="Student_ID" FROMINSTANCE ="EXP_Student_Dimension" FROMINSTANCETYPE ="Expression" TOFIELD ="Student_ID1" TOINSTANCE ="JNR_Student_Dimension" TOINSTANCETYPE ="Joiner"/>
+        <TARGETLOADORDER ORDER ="1" TARGETINSTANCE ="STUDENT_DIMENSION"/>
+        <ERPINFO/>
+    </MAPPING>
+    <CONFIG DESCRIPTION ="Default session configuration object" ISDEFAULT ="YES" NAME ="default_session_config" VERSIONNUMBER ="1">
+        <ATTRIBUTE NAME ="Advanced" VALUE =""/>
+        <ATTRIBUTE NAME ="Constraint based load ordering" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Cache LOOKUP() function" VALUE ="YES"/>
+        <ATTRIBUTE NAME ="Default buffer block size" VALUE ="Auto"/>
+        <ATTRIBUTE NAME ="Line Sequential buffer length" VALUE ="1024"/>
+        <ATTRIBUTE NAME ="Maximum Memory Allowed For Auto Memory Attributes" VALUE ="512MB"/>
+        <ATTRIBUTE NAME ="Maximum Percentage of Total Memory Allowed For Auto Memory Attributes" VALUE ="5"/>
+        <ATTRIBUTE NAME ="Additional Concurrent Pipelines for Lookup Cache Creation" VALUE ="Auto"/>
+        <ATTRIBUTE NAME ="Custom Properties" VALUE =""/>
+        <ATTRIBUTE NAME ="Pre-build lookup cache" VALUE ="Auto"/>
+        <ATTRIBUTE NAME ="Optimization Level" VALUE ="Medium"/>
+        <ATTRIBUTE NAME ="DateTime Format String" VALUE ="MM/DD/YYYY HH24:MI:SS.US"/>
+        <ATTRIBUTE NAME ="Pre 85 Timestamp Compatibility" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Log Options" VALUE ="0"/>
+        <ATTRIBUTE NAME ="Save session log by" VALUE ="Session runs"/>
+        <ATTRIBUTE NAME ="Save session log for these runs" VALUE ="0"/>
+        <ATTRIBUTE NAME ="Session Log File Max Size" VALUE ="0"/>
+        <ATTRIBUTE NAME ="Session Log File Max Time Period" VALUE ="0"/>
+        <ATTRIBUTE NAME ="Maximum Partial Session Log Files" VALUE ="1"/>
+        <ATTRIBUTE NAME ="Writer Commit Statistics Log Frequency" VALUE ="1"/>
+        <ATTRIBUTE NAME ="Writer Commit Statistics Log Interval" VALUE ="0"/>
+        <ATTRIBUTE NAME ="Error handling" VALUE =""/>
+        <ATTRIBUTE NAME ="Stop on errors" VALUE ="0"/>
+        <ATTRIBUTE NAME ="Override tracing" VALUE ="None"/>
+        <ATTRIBUTE NAME ="On Stored Procedure error" VALUE ="Stop"/>
+        <ATTRIBUTE NAME ="On Pre-session command task error" VALUE ="Stop"/>
+        <ATTRIBUTE NAME ="On Pre-Post SQL error" VALUE ="Stop"/>
+        <ATTRIBUTE NAME ="Enable Recovery" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Error Log Type" VALUE ="None"/>
+        <ATTRIBUTE NAME ="Error Log Table Name Prefix" VALUE =""/>
+        <ATTRIBUTE NAME ="Error Log File Name" VALUE ="PMError.log"/>
+        <ATTRIBUTE NAME ="Log Source Row Data" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Data Column Delimiter" VALUE ="|"/>
+        <ATTRIBUTE NAME ="Partitioning Options" VALUE =""/>
+        <ATTRIBUTE NAME ="Dynamic Partitioning" VALUE ="Disabled"/>
+        <ATTRIBUTE NAME ="Number of Partitions" VALUE ="1"/>
+        <ATTRIBUTE NAME ="Multiplication Factor" VALUE ="Auto"/>
+        <ATTRIBUTE NAME ="Session on Grid" VALUE =""/>
+        <ATTRIBUTE NAME ="Is Enabled" VALUE ="NO"/>
+    </CONFIG>
+    <WORKFLOW DESCRIPTION ="" ISENABLED ="YES" ISRUNNABLESERVICE ="NO" ISSERVICE ="NO" ISVALID ="YES" NAME ="wf_m_Student_Dimension" REUSABLE_SCHEDULER ="NO" SCHEDULERNAME ="Scheduler" SERVERNAME ="INT_RepoAcademy" SERVER_DOMAINNAME ="Domain_Training" SUSPEND_ON_ERROR ="NO" TASKS_MUST_RUN_ON_SERVER ="NO" VERSIONNUMBER ="1">
+        <SCHEDULER DESCRIPTION ="" NAME ="Scheduler" REUSABLE ="NO" VERSIONNUMBER ="1">
+            <SCHEDULEINFO SCHEDULETYPE ="ONDEMAND"/>
+        </SCHEDULER>
+        <TASK DESCRIPTION ="" NAME ="Start" REUSABLE ="NO" TYPE ="Start" VERSIONNUMBER ="1"/>
+        <SESSION DESCRIPTION ="" ISVALID ="YES" MAPPINGNAME ="m_Student_Dimension" NAME ="s_m_Student_Dimension" REUSABLE ="NO" SORTORDER ="Binary" VERSIONNUMBER ="1">
+            <SESSTRANSFORMATIONINST ISREPARTITIONPOINT ="YES" PARTITIONTYPE ="PASS THROUGH" PIPELINE ="2" SINSTANCENAME ="STUDENT_DIMENSION" STAGE ="1" TRANSFORMATIONNAME ="STUDENT_DIMENSION" TRANSFORMATIONTYPE ="Target Definition"/>
+            <SESSTRANSFORMATIONINST ISREPARTITIONPOINT ="NO" PIPELINE ="0" SINSTANCENAME ="student_details" STAGE ="0" TRANSFORMATIONNAME ="student_details" TRANSFORMATIONTYPE ="Source Definition">
+                <FLATFILE CODEPAGE ="MS1252" CONSECDELIMITERSASONE ="NO" DELIMITED ="YES" DELIMITERS ="&#x5c;011" ESCAPE_CHARACTER ="" KEEPESCAPECHAR ="NO" LINESEQUENTIAL ="NO" MULTIDELIMITERSASAND ="NO" NULLCHARTYPE ="ASCII" NULL_CHARACTER ="*" PADBYTES ="1" QUOTE_CHARACTER ="NONE" REPEATABLE ="NO" ROWDELIMITER ="0" SKIPROWS ="1" STRIPTRAILINGBLANKS ="NO"/>
+            </SESSTRANSFORMATIONINST>
+            <SESSTRANSFORMATIONINST ISREPARTITIONPOINT ="NO" PIPELINE ="0" SINSTANCENAME ="student_adress" STAGE ="0" TRANSFORMATIONNAME ="student_adress" TRANSFORMATIONTYPE ="Source Definition">
+                <FLATFILE CODEPAGE ="MS1252" CONSECDELIMITERSASONE ="NO" DELIMITED ="YES" DELIMITERS ="&#x5c;011" ESCAPE_CHARACTER ="" KEEPESCAPECHAR ="NO" LINESEQUENTIAL ="NO" MULTIDELIMITERSASAND ="NO" NULLCHARTYPE ="ASCII" NULL_CHARACTER ="*" PADBYTES ="1" QUOTE_CHARACTER ="NONE" REPEATABLE ="NO" ROWDELIMITER ="0" SKIPROWS ="1" STRIPTRAILINGBLANKS ="NO"/>
+            </SESSTRANSFORMATIONINST>
+            <SESSTRANSFORMATIONINST ISREPARTITIONPOINT ="YES" PARTITIONTYPE ="PASS THROUGH" PIPELINE ="1" SINSTANCENAME ="SQ_student_details" STAGE ="2" TRANSFORMATIONNAME ="SQ_student_details" TRANSFORMATIONTYPE ="Source Qualifier"/>
+            <SESSTRANSFORMATIONINST ISREPARTITIONPOINT ="YES" PARTITIONTYPE ="PASS THROUGH" PIPELINE ="2" SINSTANCENAME ="SQ_student_adress" STAGE ="3" TRANSFORMATIONNAME ="SQ_student_adress" TRANSFORMATIONTYPE ="Source Qualifier"/>
+            <SESSTRANSFORMATIONINST ISREPARTITIONPOINT ="NO" PIPELINE ="2" SINSTANCENAME ="EXP_Student_Dimension" STAGE ="3" TRANSFORMATIONNAME ="EXP_Student_Dimension" TRANSFORMATIONTYPE ="Expression">
+                <PARTITION DESCRIPTION ="" NAME ="Partition #1"/>
+            </SESSTRANSFORMATIONINST>
+            <SESSTRANSFORMATIONINST ISREPARTITIONPOINT ="NO" PIPELINE ="2" SINSTANCENAME ="JNR_Student_Dimension" STAGE ="3" TRANSFORMATIONNAME ="JNR_Student_Dimension" TRANSFORMATIONTYPE ="Joiner">
+                <PARTITION DESCRIPTION ="" NAME ="Partition #1"/>
+            </SESSTRANSFORMATIONINST>
+            <CONFIGREFERENCE REFOBJECTNAME ="default_session_config" TYPE ="Session config"/>
+            <SESSIONEXTENSION NAME ="Relational Writer" SINSTANCENAME ="STUDENT_DIMENSION" SUBTYPE ="Relational Writer" TRANSFORMATIONTYPE ="Target Definition" TYPE ="WRITER">
+                <CONNECTIONREFERENCE CNXREFNAME ="DB Connection" CONNECTIONNAME ="Oracle_POC" CONNECTIONNUMBER ="1" CONNECTIONSUBTYPE ="Oracle" CONNECTIONTYPE ="Relational" VARIABLE =""/>
+                <ATTRIBUTE NAME ="Target load type" VALUE ="Normal"/>
+                <ATTRIBUTE NAME ="Insert" VALUE ="YES"/>
+                <ATTRIBUTE NAME ="Update as Update" VALUE ="NO"/>
+                <ATTRIBUTE NAME ="Update as Insert" VALUE ="NO"/>
+                <ATTRIBUTE NAME ="Update else Insert" VALUE ="NO"/>
+                <ATTRIBUTE NAME ="Delete" VALUE ="NO"/>
+                <ATTRIBUTE NAME ="Truncate target table option" VALUE ="YES"/>
+                <ATTRIBUTE NAME ="Reject file directory" VALUE ="$PMBadFileDir&#x5c;"/>
+                <ATTRIBUTE NAME ="Reject filename" VALUE ="student_dimension1.bad"/>
+            </SESSIONEXTENSION>
+            <SESSIONEXTENSION DSQINSTNAME ="SQ_student_details" DSQINSTTYPE ="Source Qualifier" NAME ="File Reader" SINSTANCENAME ="student_details" SUBTYPE ="File Reader" TRANSFORMATIONTYPE ="Source Definition" TYPE ="READER">
+                <CONNECTIONREFERENCE CNXREFNAME ="Connection" CONNECTIONNAME ="" CONNECTIONNUMBER ="1" CONNECTIONSUBTYPE ="" CONNECTIONTYPE ="" VARIABLE =""/>
+                <ATTRIBUTE NAME ="Input Type" VALUE ="File"/>
+                <ATTRIBUTE NAME ="Concurrent read partitioning" VALUE ="Optimize throughput"/>
+                <ATTRIBUTE NAME ="Command Type" VALUE ="Command Generating Data"/>
+                <ATTRIBUTE NAME ="Source filetype" VALUE ="Direct"/>
+                <ATTRIBUTE NAME ="Source file directory" VALUE ="C:&#x5c;Users&#x5c;Administrator&#x5c;Documents&#x5c;Student Report INTCDB22DW002&#x5c;Sources"/>
+                <ATTRIBUTE NAME ="Source filename" VALUE ="student_details.txt"/>
+                <ATTRIBUTE NAME ="Command" VALUE =""/>
+                <ATTRIBUTE NAME ="File Reader Truncate String Null" VALUE ="NO"/>
+                <ATTRIBUTE NAME ="Codepage Parameter" VALUE =""/>
+            </SESSIONEXTENSION>
+            <SESSIONEXTENSION DSQINSTNAME ="SQ_student_adress" DSQINSTTYPE ="Source Qualifier" NAME ="File Reader" SINSTANCENAME ="student_adress" SUBTYPE ="File Reader" TRANSFORMATIONTYPE ="Source Definition" TYPE ="READER">
+                <CONNECTIONREFERENCE CNXREFNAME ="Connection" CONNECTIONNAME ="" CONNECTIONNUMBER ="1" CONNECTIONSUBTYPE ="" CONNECTIONTYPE ="" VARIABLE =""/>
+                <ATTRIBUTE NAME ="Input Type" VALUE ="File"/>
+                <ATTRIBUTE NAME ="Concurrent read partitioning" VALUE ="Optimize throughput"/>
+                <ATTRIBUTE NAME ="Command Type" VALUE ="Command Generating Data"/>
+                <ATTRIBUTE NAME ="Source filetype" VALUE ="Direct"/>
+                <ATTRIBUTE NAME ="Source file directory" VALUE ="C:&#x5c;Users&#x5c;Administrator&#x5c;Documents&#x5c;Student Report INTCDB22DW002&#x5c;Sources"/>
+                <ATTRIBUTE NAME ="Source filename" VALUE ="student_adress.txt"/>
+                <ATTRIBUTE NAME ="Command" VALUE =""/>
+                <ATTRIBUTE NAME ="File Reader Truncate String Null" VALUE ="NO"/>
+                <ATTRIBUTE NAME ="Codepage Parameter" VALUE =""/>
+            </SESSIONEXTENSION>
+            <SESSIONEXTENSION NAME ="File Reader" SINSTANCENAME ="SQ_student_details" SUBTYPE ="File Reader" TRANSFORMATIONTYPE ="Source Qualifier" TYPE ="READER"/>
+            <SESSIONEXTENSION NAME ="File Reader" SINSTANCENAME ="SQ_student_adress" SUBTYPE ="File Reader" TRANSFORMATIONTYPE ="Source Qualifier" TYPE ="READER"/>
+            <ATTRIBUTE NAME ="General Options" VALUE =""/>
+            <ATTRIBUTE NAME ="Write Backward Compatible Session Log File" VALUE ="NO"/>
+            <ATTRIBUTE NAME ="Session Log File Name" VALUE ="s_m_Student_Dimension.log"/>
+            <ATTRIBUTE NAME ="Session Log File directory" VALUE ="$PMSessionLogDir&#x5c;"/>
+            <ATTRIBUTE NAME ="Parameter Filename" VALUE =""/>
+            <ATTRIBUTE NAME ="Enable Test Load" VALUE ="NO"/>
+            <ATTRIBUTE NAME ="$Source connection value" VALUE =""/>
+            <ATTRIBUTE NAME ="$Target connection value" VALUE =""/>
+            <ATTRIBUTE NAME ="Treat source rows as" VALUE ="Insert"/>
+            <ATTRIBUTE NAME ="Commit Type" VALUE ="Target"/>
+            <ATTRIBUTE NAME ="Commit Interval" VALUE ="10000"/>
+            <ATTRIBUTE NAME ="Commit On End Of File" VALUE ="YES"/>
+            <ATTRIBUTE NAME ="Rollback Transactions on Errors" VALUE ="NO"/>
+            <ATTRIBUTE NAME ="Recovery Strategy" VALUE ="Fail task and continue workflow"/>
+            <ATTRIBUTE NAME ="Java Classpath" VALUE =""/>
+            <ATTRIBUTE NAME ="Performance" VALUE =""/>
+            <ATTRIBUTE NAME ="DTM buffer size" VALUE ="Auto"/>
+            <ATTRIBUTE NAME ="Collect performance data" VALUE ="NO"/>
+            <ATTRIBUTE NAME ="Write performance data to repository" VALUE ="NO"/>
+            <ATTRIBUTE NAME ="Incremental Aggregation" VALUE ="NO"/>
+            <ATTRIBUTE NAME ="Enable high precision" VALUE ="NO"/>
+            <ATTRIBUTE NAME ="Session retry on deadlock" VALUE ="NO"/>
+            <ATTRIBUTE NAME ="Pushdown Optimization" VALUE ="None"/>
+            <ATTRIBUTE NAME ="Allow Temporary View for Pushdown" VALUE ="NO"/>
+            <ATTRIBUTE NAME ="Allow Temporary Sequence for Pushdown" VALUE ="NO"/>
+            <ATTRIBUTE NAME ="Allow Pushdown for User Incompatible Connections" VALUE ="NO"/>
+        </SESSION>
+        <TASKINSTANCE DESCRIPTION ="" ISENABLED ="YES" NAME ="Start" REUSABLE ="NO" TASKNAME ="Start" TASKTYPE ="Start"/>
+        <TASKINSTANCE DESCRIPTION ="" FAIL_PARENT_IF_INSTANCE_DID_NOT_RUN ="NO" FAIL_PARENT_IF_INSTANCE_FAILS ="NO" ISENABLED ="YES" NAME ="s_m_Student_Dimension" REUSABLE ="NO" TASKNAME ="s_m_Student_Dimension" TASKTYPE ="Session" TREAT_INPUTLINK_AS_AND ="YES"/>
+        <WORKFLOWLINK CONDITION ="" FROMTASK ="Start" TOTASK ="s_m_Student_Dimension"/>
+        <WORKFLOWVARIABLE DATATYPE ="date/time" DEFAULTVALUE ="" DESCRIPTION ="The time this task started" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$Start.StartTime" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="date/time" DEFAULTVALUE ="" DESCRIPTION ="The time this task completed" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$Start.EndTime" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Status of this task&apos;s execution" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$Start.Status" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Status of the previous task that is not disabled" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$Start.PrevTaskStatus" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Error code for this task&apos;s execution" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$Start.ErrorCode" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="Error message for this task&apos;s execution" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$Start.ErrorMsg" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="date/time" DEFAULTVALUE ="" DESCRIPTION ="The time this task started" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_m_Student_Dimension.StartTime" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="date/time" DEFAULTVALUE ="" DESCRIPTION ="The time this task completed" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_m_Student_Dimension.EndTime" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Status of this task&apos;s execution" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_m_Student_Dimension.Status" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Status of the previous task that is not disabled" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_m_Student_Dimension.PrevTaskStatus" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Error code for this task&apos;s execution" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_m_Student_Dimension.ErrorCode" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="Error message for this task&apos;s execution" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_m_Student_Dimension.ErrorMsg" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Rows successfully read" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_m_Student_Dimension.SrcSuccessRows" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Rows failed to read" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_m_Student_Dimension.SrcFailedRows" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Rows successfully loaded" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_m_Student_Dimension.TgtSuccessRows" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Rows failed to load" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_m_Student_Dimension.TgtFailedRows" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="Total number of transformation errors" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_m_Student_Dimension.TotalTransErrors" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="First error code" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_m_Student_Dimension.FirstErrorCode" USERDEFINED ="NO"/>
+        <WORKFLOWVARIABLE DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="First error message" ISNULL ="NO" ISPERSISTENT ="NO" NAME ="$s_m_Student_Dimension.FirstErrorMsg" USERDEFINED ="NO"/>
+        <ATTRIBUTE NAME ="Parameter Filename" VALUE =""/>
+        <ATTRIBUTE NAME ="Write Backward Compatible Workflow Log File" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Workflow Log File Name" VALUE ="wf_m_Student_Dimension.log"/>
+        <ATTRIBUTE NAME ="Workflow Log File Directory" VALUE ="$PMWorkflowLogDir&#x5c;"/>
+        <ATTRIBUTE NAME ="Save Workflow log by" VALUE ="By runs"/>
+        <ATTRIBUTE NAME ="Save workflow log for these runs" VALUE ="0"/>
+        <ATTRIBUTE NAME ="Service Name" VALUE =""/>
+        <ATTRIBUTE NAME ="Service Timeout" VALUE ="0"/>
+        <ATTRIBUTE NAME ="Is Service Visible" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Is Service Protected" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Fail task after wait time" VALUE ="0"/>
+        <ATTRIBUTE NAME ="Enable HA recovery" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Automatically recover terminated tasks" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Service Level Name" VALUE ="Default"/>
+        <ATTRIBUTE NAME ="Allow concurrent run with unique run instance name" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Allow concurrent run with same run instance name" VALUE ="NO"/>
+        <ATTRIBUTE NAME ="Maximum number of concurrent runs" VALUE ="0"/>
+        <ATTRIBUTE NAME ="Assigned Web Services Hubs" VALUE =""/>
+        <ATTRIBUTE NAME ="Maximum number of concurrent runs per Hub" VALUE ="1000"/>
+        <ATTRIBUTE NAME ="Expected Service Time" VALUE ="1"/>
+    </WORKFLOW>
+</FOLDER>
+</REPOSITORY>
+</POWERMART>
